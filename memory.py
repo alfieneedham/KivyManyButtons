@@ -7,8 +7,8 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
 
-GRID_SIZE = 4
-IMAGE_COUNT = 6
+GRID_SIZE = 5
+IMAGE_COUNT = 9
 MAX_IMAGES_VISIBLE = 3
 
 # Stored the list of all Cell objects with images currently revealed.
@@ -33,7 +33,7 @@ class Cell(BoxLayout):
         super().__init__() 
         # image_id might be useful to compare if two images are the same
         self.imageId = image_id
-        image_location = 'assets/image{0}.png'.format(image_id)
+        image_location = 'buttons/button{0}.png'.format(image_id)
         self.imageView = Image(source=image_location)
 
         self.buttonView = Button()
